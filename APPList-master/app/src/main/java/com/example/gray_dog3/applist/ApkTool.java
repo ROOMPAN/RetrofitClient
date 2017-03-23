@@ -36,7 +36,7 @@ public class ApkTool {
                 myAppInfos.add(myAppInfo);
             }
         } catch (Exception e) {
-            Log.e(TAG, "===============获取应用包信息失败");
+            Log.e(TAG, "===============获取应用包信息失败");========
         }
         return myAppInfos;
     }
