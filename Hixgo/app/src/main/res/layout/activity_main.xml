@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:id="@+id/activity_main_bottom_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#7dCCCCCC"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:weightSum="4">
+
+        <RadioButton
+            android:id="@+id/activity_main_bottom_bar_radio_home"
+            style="@style/main_tab_text_style"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:text="首页" />
+
+        <RadioButton
+            android:id="@+id/activity_main_bottom_bar_radio_category"
+            style="@style/main_tab_text_style"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:text="分类" />
+
+        <RadioButton
+            android:id="@+id/activity_main_bottom_bar_radio_cart"
+            style="@style/main_tab_text_style"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:text="购物车" />
+
+        <RadioButton
+            android:id="@+id/activity_main_bottom_bar_radio_user_info"
+            style="@style/main_tab_text_style"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:text="我" />
+
+    </RadioGroup>
+    <RelativeLayout
+        android:id="@+id/activity_main_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="TopBar" />
+
+    </RelativeLayout>
+
+    <com.joaye.hixgo.views.widgets.HixgoMainViewPager
+        android:id="@+id/activity_main_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/activity_main_bottom_bar_layout"
+        android:layout_below="@id/activity_main_top_bar" />
+
+</RelativeLayout>

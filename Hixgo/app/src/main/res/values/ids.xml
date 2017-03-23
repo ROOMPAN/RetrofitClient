@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="inbox_layout_titles" type="id" />
+    <item name="inbox_layout_content" type="id" />
+    <item name="item_click_support" type="id" />
+
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/view_topbar_with_title" />
+
+    <EditText
+        android:id="@+id/login_edit_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_login_phone"
+        android:layout_below="@+id/topbar" />
+
+    <EditText
+        android:id="@+id/login_edit_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_login_pwd"
+        android:layout_below="@id/login_edit_phone" />
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@id/login_edit_pwd"
+        android:text="@string/text_login_btn"/>
+
+</RelativeLayout>
